@@ -20,6 +20,5 @@
     "mongoose": "^6.4.4",
     "randomstring": "^1.2.2"
   },
-  "devDependencies": {},
   "description": ""
 }
