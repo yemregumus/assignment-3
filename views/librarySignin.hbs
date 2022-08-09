@@ -1,0 +1,19 @@
+{{> header }}
+    <div class="border">
+      <form class="signin" method="POST" action="/login">
+        <div>
+          <input type="text" placeholder="Username" name="uname" />
+        </div>
+
+        <div>
+          <input type="password" placeholder="Password" name="pass" />
+        </div>
+        <button type="submit" value="Submit">Submit</button>
+      </form>
+      {{#if unameError}}
+      <p>Not a registered username</p>
+      {{/if}}
+      {{#if passError}}
+      <p>Invalid password</p>
+      {{/if}}
+    </div>

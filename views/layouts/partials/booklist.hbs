@@ -1,0 +1,12 @@
+
+<div class="booklist">
+<h3>Available Books</h3>
+<form action="home/borrow" method="post" id="frmLibraryHome">
+<ul class="book-list-container">
+{{#each a_booklist as |books|}}
+<li class="book"><span>{{books.[1]}}</span> <input class="avcheck" type="checkbox" name="chkBook" value="{{books.[0]}}"></li>
+{{/each}}
+</ul>
+<button class="borrow" disabled>Borrow</button>
+</form>
+</div>

@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+
+body {
+  background: url('bg.jpg') no-repeat;
+}
+
+h1.headersign {
+  color: antiquewhite;
+  letter-spacing: 15px;
+  border-bottom: 5px solid #888;
+  padding-bottom: 10px;
+}
+
+form.signin {
+  background: white;
+  border: 5px solid rgb(0, 0, 0);
+
+  padding: 30px;
+}
+
+
+
+div.border {
+  float: right;
+  background-color: white;
+  border: 10px solid #888;
+  width: 400px;
+  margin-top: 300px;
+  margin-right: 50px;
+  padding: 30px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form div input {
+  padding: 7px;
+  background-color: white;
+  border: 1px solid #555;
+  display: block;
+  width: 300px;
+  opacity: 0.6;
+}
+
+form button {
+  background-color: #ddc690;
+  width: 318px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: none;
+  padding: 10px 0px 10px 0px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+button:disabled{
+  background-color: #888 !important;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.signin {
+  font-size: 18px;
+  font-family: 'Gravitas One', cursive;
+  font-weight: lighter;
+  margin-right: 30px;
+  margin-top: 20px;
+  float: right;
+  color: #ddc690;
+  
+}
+
+.border p{
+  background: red;
+  color: white;
+  font-weight: bold;
+  padding: 7px;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  margin-top: 200px;
+  font-weight: bold;
+  font-size: 120px;
+  font-family: 'Gravitas One', cursive;
+  line-height: 160px;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #ddc690;
+  background: url(h1bg.jpg) fixed;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+
+}
+
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+
+
+/*Home*/
+
+.signout{
+  font-size: 18px;
+  font-family: 'Gravitas One', cursive;
+  font-weight: lighter;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 30px;
+  color: #ddc690;
+  margin-top: -60px;
+}
+
+.booklist{
+  float: left;
+  width: 350px;
+  background: white;
+  opacity: 0.8;
+  padding: 25px;
+  margin-left: 50px;
+  margin-top: 50px;
+  border: 5px solid #ddc690;
+  border-radius: 6px;
+}
+
+.booklist li, .loginContainer li{
+
+  list-style-type: none;
+  overflow: hidden;
+  border-bottom: 1px solid #555;
+  margin-left: -30px;
+  padding-bottom: 0px;
+  margin-bottom: 6px;
+}
+
+.booklist li input, .loginContainer li input{
+  float: right;
+  margin-right: 10px;
+  margin-top: -15px;
+}
+
+.booklist li span, .loginContainer li span{
+  float: left;
+  width: 400px;
+}
+
+.booklist h3, .loginContainer h3{
+  text-align: center;
+}
+
+.booklist button, .loginContainer button{
+  margin-left: 57px;
+  padding: 8px;
+  width: 250px;
+  background-color: #ddc690;
+  color: rgb(0, 0, 0);
+  margin-top: 8px;
+  border-radius: 3px;
+  font-weight: bolder;
+}
+
+.loginContainer{
+  float: right;
+  width: 350px;
+  background: white;
+  opacity: 0.8;
+  padding: 25px;
+  margin-right: 50px;
+  margin-top: 50px;
+  border: 5px solid #ddc690;
+  border-radius: 6px;
+}
+
+.nobook{
+  width: 300px;
+  height: 20px;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+  z-index: 5;
+}
+
+#black{
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.nobook p{
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  padding: 7px;
+  text-align: center;
+ 
+}

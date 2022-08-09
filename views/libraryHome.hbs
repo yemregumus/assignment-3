@@ -1,0 +1,34 @@
+
+{{> header }}
+
+<div style='overflow: hidden;'>
+  <a class='signout' href='signout'>
+    Sign Out
+  </a>
+</div>
+
+{{> booklist }}
+
+
+  {{#if error}}
+  
+  <div id="black"></div>
+  <div class="nobook">
+  <p>This book is not available anymore.</p>
+  </div>
+  <script>
+    setTimeout(function(){
+      $(".nobook").fadeOut(1000, function(){
+        window.location = "/home";
+      });
+     
+    }, 1000)
+
+    
+
+  </script>
+  {{/if}}
+
+
+{{> borrowedlist }}
+

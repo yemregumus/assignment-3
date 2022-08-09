@@ -1,0 +1,25 @@
+{
+  "name": "assignment3yeg",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Yunus Gumus",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7",
+    "mongodb": "^4.8.0",
+    "mongoose": "^6.4.4",
+    "randomstring": "^1.2.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}

@@ -1,0 +1,14 @@
+
+<div class="loginContainer">
+
+<form action="home/return" method="post" id="frmLibraryHome2">
+<p>{{login.uname}}</p>
+<ul class="book-list-container">
+{{#each u_booklist as |books|}}
+<li class="book"><span>{{books.[1]}}</span> <input class="avcheck" type="checkbox" name="chkBookBorrowed" value="{{books.[0]}}"></li>
+{{/each}}
+</ul>
+<button class="return" disabled>Return</button>
+</form>
+
+</div>
