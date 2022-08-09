@@ -9,6 +9,7 @@ const randomStr = require("randomstring");
 const fs = require('fs');
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const MongoStore = require('connect-mongo');
 
 const db = require("./db");
 const authh = require("./login");
@@ -68,6 +69,10 @@ var strRandom = randomStr.generate();
 
 app.use(session({
     cookieName: "aSession",
+    store: MongoStore.create({
+        mongoUrl:'mongodb+srv://ygumus:13uncucumA@senecaweb.xujfi4i.mongodb.net/Library?retryWrites=true&w=majority',
+    
+    }),
     secret: strRandom,
     duration: 15 * 60 * 1000,
     activeDuration: 3 * 60 * 1000,
